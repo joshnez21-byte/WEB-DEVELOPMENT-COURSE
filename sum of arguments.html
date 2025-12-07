@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            h2 {
+                text-align: center;
+                color:red;
+            }
+        
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: beige;
+
+            }
+        </style>
+</head>
+<body>
+    <h2>Sum of Arguments & Trigonometric Functions</h2>
+    <p id="basketball"></p>
+    <script>
+        function sumAll(){
+            let sum = 0;
+            for(let i = 0; i < arguments.length; i++){
+                sum += arguments[i];
+            }
+            return sum;
+        }
+            document.getElementById("basketball").innerHTML =sumAll(10, 20, 30, 40, 50);
+            var value=Math.sin(90);
+            document.write("Sin 90 is: " + value + "<br>"); 
+            var value=Math.cos(0);
+            document.write("Cos 0 is: " + value + "<br>");
+            var value=Math.tan(45);
+            document.write("Tan 45 is: " + value + "<br>");
+            
+
+    </script>
+</body>
+</html>
