@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The JS String Method</h1>
+    <p>The <code>String()</code> method converts a value to a string.</p>
+    <p id ="number_result"></p>
+    <p id ="string_result"></p>
+    <script>
+        var x = 50;;
+        var y = 22;
+        document.getElementById("number_result").innerHTML = x+y;
+        document.getElementById("string_result") .innerHTML = String(x) + String(y); //Does not add because it is a string it concatenates
+    </script>
+</body>
+</html>
