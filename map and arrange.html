@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            color:blue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Ascending & Descending for Mapped Numbers</p>
+    <p id="product_value"></p>
+    <button onclick="ascendig()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <script>
+        var numbers = [7, 8, 12, 15];
+        function myFunction (num) {
+            return num * 10;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = "The Mapped Numbers are: " + newarray;
+        function ascendig() {
+            newarray.sort(function(a, b){return a - b});
+            document.getElementById("product_value").innerHTML = "Ascending Order: " + newarray;
+        }
+        function descending() {
+            newarray.sort(function(a, b){return b - a});
+            document.getElementById("product_value").innerHTML = "Descending Order: " + newarray;
+        }
+    </script>
+   </body>
+  </html>
