@@ -1,0 +1,122 @@
+/* --- Global Body Styles --- */
+
+body {
+
+    /* 1. Set background to dark because HTML uses 'text-white' */
+
+    background-color: #1f1f1f;
+
+
+    /* 2. Set the base font to Roboto Slab (good for body text) */
+
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* --- Typography --- */
+
+/* Use Baloo Tamma 2 for all headings to give it that bubbly/modern look */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+/* Custom styling for the H1 class found in your HTML */
+
+.m-heading {
+
+    font-weight: 700;
+    /* Bold */
+
+    font-size: 3rem;
+    /* Make it large */
+
+    letter-spacing: 1px;
+
+    margin-bottom: 1rem;
+
+}
+
+/* Tweak the paragraph text for better readability on dark mode */
+
+p {
+
+    font-size: 1.1rem;
+
+    line-height: 1.6;
+
+    color: #e0e0e0;
+    /* Soft white, easier on eyes than pure white */
+
+}
+
+/* --- Section Styling --- */
+
+#about {
+
+    /* Optional: Adds a very subtle gradient to the section */
+
+    background: linear-gradient(135deg, #1f1f1f 0%, #2c3e50 100%);
+
+    border-radius: 15px;
+    /* Rounded corners for the container if desired */
+
+}
+
+/* --- Image Styling --- */
+
+/* Target the svg image in the About section */
+
+#about img {
+
+    /* Adds a floating effect */
+
+    transition: transform 0.3s ease;
+
+}
+
+#about img:hover {
+
+    transform: scale(1.05);
+    /* Slightly zooms in when hovered */
+
+}
+
+/* --- Button Styling --- */
+
+/* Customizing the Bootstrap 'btn-outline-warning' */
+
+.btn-outline-warning {
+
+    font-family: 'Baloo Tamma 2', cursive;
+
+    border-width: 2px;
+
+    font-weight: 600;
+
+    padding: 10px 30px;
+
+    margin-top: 15px;
+
+    border-radius: 50px;
+    /* Pill shaped button */
+
+}
+
+.btn-outline-warning:hover {
+
+    background-color: #ffc107;
+
+    color: #000;
+
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    /* Glowing effect */
+
+}
