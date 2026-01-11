@@ -1,0 +1,141 @@
+/* =========================================
+
+Part 1: Fonts & Main Section Layout
+
+========================================= */
+
+/* 1. Global Font Setup */
+
+body {
+
+    font-family: 'Roboto Slab', serif;
+
+    background-color: #f4f4f4;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+/* 2. Main Container Background */
+
+#social-media {
+
+    background-color: #1f2833;
+    /* Dark Navy background */
+
+    min-height: 300px;
+
+    position: relative;
+
+}
+
+/* 3. Custom Heading Style */
+
+.m-heading {
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    font-size: 3.5rem;
+
+}
+/* =========================================
+
+Part 2: Cards, Buttons & Animations
+
+========================================= */
+
+/* 1. Base Card Style (.media_link) */
+
+.media_link {
+
+    background-color: #0b0c10;
+    /* Very dark grey for cards */
+
+    border-radius: 15px;
+    /* Rounded corners */
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Soft shadow */
+
+
+    margin-bottom: 20px;
+
+    padding: 15px 0;
+
+    height: 100px;
+    /* Fixed height */
+
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    /* Smooth hover animation */
+
+    border: 1px solid transparent;
+
+}
+
+/* 2. Hover Effect: Lift up */
+
+.media_link:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+
+    border: 1px solid #ffffff33;
+
+}
+
+/* 3. Text & Icon Styling inside Cards */
+
+.media_link h3 {
+
+    font-size: 1.5rem;
+
+    font-weight: 600;
+
+}
+
+.media_link i {
+
+    transition: color 0.3s ease;
+
+}
+
+/* Turn icon white on hover */
+
+.media_link:hover i {
+
+    color: #ffffff !important;
+
+}
+
+/* 4. Special Override for "Email" (Yellow Button) */
+
+.bg-warning.media_link {
+
+    background-color: #ffc107 !important;
+
+    border: none;
+
+}
+
+/* Keep icon dark on the yellow button hover */
+
+.bg-warning.media_link:hover i {
+
+    color: #000 !important;
+
+}
