@@ -1,0 +1,95 @@
+/* =========================================
+
+1. Global Settings & Fonts
+
+========================================= */
+
+body {
+
+    /* Main font for body text */
+
+    font-family: 'Roboto Slab', serif;
+
+
+    /* Dark Background for the whole page */
+
+    background-color: #1f2833;
+
+    color: #ffffff;
+
+
+    /* Ensure footer pushes down if content is short */
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    /* Headings font */
+
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+/* =========================================
+
+2. Footer Styling
+
+========================================= */
+
+/* Push the footer to the bottom */
+
+footer {
+
+    margin-top: auto;
+
+    border-top: 1px solid #45a29e;
+    /* Teal border on top */
+
+    background-color: #0b0c10;
+    /* Darker black/grey for footer area */
+
+}
+
+/* Override Bootstrap's 'text-muted' to be readable on dark background */
+
+.text-muted {
+
+    color: #c5c6c7 !important;
+    /* Light Grey */
+
+}
+
+/* Footer Link Styling */
+
+footer a.text-warning {
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+
+}
+
+/* Hover effect for the Copyright Link */
+
+footer a.text-warning:hover {
+
+    color: #45a29e !important;
+    /* Changes from Yellow to Teal on hover */
+
+    text-decoration: underline;
+
+    text-shadow: 0 0 10px rgba(69, 162, 158, 0.5);
+    /* Glowing effect */
+
+}
