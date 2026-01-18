@@ -1,0 +1,207 @@
+body {
+
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #000;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0;
+
+}
+
+#container {
+
+    position: relative;
+
+    background: linear-gradient(135deg, #2ecc71, #3498db);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+#calculator {
+
+    width: 320px;
+
+    height: 550px;
+
+    background-color: #fff;
+
+    margin: 0 auto;
+
+    border-radius: 5px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+#result {
+
+    height: 140px;
+
+    text-align: right;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+}
+
+#history-value {
+
+    color: #727272;
+
+    font-size: 15px;
+
+    margin: 0 0 10px 0;
+
+    min-height: 20px;
+
+}
+
+#output-value {
+
+    color: #222;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin: 0;
+
+}
+
+#keyboard {
+
+    height: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 10px;
+
+    gap: 10px;
+
+}
+
+button {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    background-color: transparent;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    outline: none;
+
+    border-radius: 50%;
+
+    transition: all 0.2s ease;
+
+    color: #333;
+
+}
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+button[id="/"] {
+
+    background-color: #63c6b6;
+
+    color: #333;
+
+}
+
+button[id="*"] {
+
+    background-color: #ffb142;
+
+    color: #333;
+
+}
+
+button[id="-"] {
+
+    background-color: #e57e76;
+
+    color: #333;
+
+}
+
+button[id="+"] {
+
+    background-color: #7f8add;
+
+    color: #333;
+
+}
+
+button[id="="] {
+
+    background-color: #9d8bc8;
+
+    color: #333;
+
+}
+
+button[id="/"],
+
+button[id="*"],
+
+button[id="-"],
+
+button[id="+"],
+
+button[id="="] {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.empty {
+
+    pointer-events: none;
+
+}
